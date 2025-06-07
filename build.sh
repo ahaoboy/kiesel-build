@@ -7,6 +7,8 @@ fi
 
 TARGET=$1
 
+zig version
+
 git clone https://codeberg.org/kiesel-js/kiesel.git kiesel --depth=1
 cd kiesel
 
@@ -14,7 +16,7 @@ zig build -Doptimize=ReleaseSafe
 
 mkdir ../dist
 
-cp ./zig-out/bin/kiesel ../kiesel
+cp ./zig-out/bin/kiesel ../dist/kiesel
 
 cd ..
 
