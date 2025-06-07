@@ -1,1 +1,1 @@
-https://github.com/quickjs-ng/quickjs
+https://codeberg.org/kiesel-js/kiesel
