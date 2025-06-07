@@ -33,6 +33,11 @@ jobs:
     name: build-${{ matrix.target }}
     steps:
       - uses: actions/checkout@v4
+
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.14.1
+
       - uses: msys2/setup-msys2@v2
         if: matrix.os == 'windows-latest'
         with:
@@ -55,10 +60,6 @@ jobs:
         shell: "bash"
         run: |
           bash build.sh ${{ matrix.target }}
-
-      - uses: mlugg/setup-zig@v2
-        with:
-          version: 0.14.1
 
       - name: build-windows
         if: matrix.os == 'windows-latest'
