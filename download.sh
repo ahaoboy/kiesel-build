@@ -6,6 +6,8 @@ EXT="${FILE_NAME##*.}"
 
 curl -L -o "${FILE_NAME}" "$DOWNLOAD_URL"
 
+chmod +x "${FILE_NAME}"
+
 mkdir -p dist
 
 cp "${FILE_NAME}" "dist/kiesel${EXT}"
