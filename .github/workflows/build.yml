@@ -79,8 +79,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: download
         run: |
-          bash download.sh "https://files.kiesel.dev/kiesel-macos-aarch64" aarch64-apple-darwin
-          bash download.sh "https://files.kiesel.dev/kiesel-windows-x86_64.exe" x86_64-pc-windows-msvc
+          bash download.sh "https://files.kiesel.dev/kiesel-macos-aarch64-releasefast" aarch64-apple-darwin
+          bash download.sh "https://files.kiesel.dev/kiesel-windows-x86_64.exe-releasefast" x86_64-pc-windows-msvc
           bash download.sh "https://files.kiesel.dev/kiesel-linux-x86_64-releasefast" x86_64-unknown-linux-gnu
       - name: Upload kiesel-aarch64-apple-darwin
         uses: actions/upload-artifact@v4
