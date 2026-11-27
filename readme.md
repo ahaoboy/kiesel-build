@@ -1,4 +1,4 @@
-<!-- 2026-11-26 06:32:45 UTC -->
+<!-- 2026-11-27 06:22:47 UTC -->
 
 https://codeberg.org/kiesel-js/kiesel
 
